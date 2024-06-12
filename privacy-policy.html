@@ -8,9 +8,8 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
         <!-- Title -->
-        <title>RechtsBerater24</title>
+        <title>AnwaltHilfe</title>
 
         <!-- Favicon -->
         <link rel="icon" href="img/core-img/favicon.ico" />
@@ -22,32 +21,26 @@
     <body>
         <!-- Preloader -->
         <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="cssload-container">
-                <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+            <div class="preloader-circle"></div>
+            <div class="preloader-img">
+                <img src="img/core-img/leaf.jpg" alt="" />
             </div>
         </div>
 
         <!-- ##### Header Area Start ##### -->
         <header class="header-area">
-            <!-- Navbar Area -->
-            <div
-                class="palatin-main-menu sticky-wrapper"
-                style="
-                    position: fixed;
-                    background-color: #000;
-                    box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2);
-                "
-            >
+            <!-- ***** Navbar Area ***** -->
+            <div class="alazea-main-menu">
                 <div class="classy-nav-container breakpoint-off">
                     <div class="container">
                         <!-- Menu -->
                         <nav
                             class="classy-navbar justify-content-between"
-                            id="palatinNav"
+                            id="alazeaNav"
                         >
-                            <!-- Nav brand -->
-                            <a href="index.html" class="nav-brand text-white"
-                                >RechtsBerater24</a
+                            <!-- Nav Brand -->
+                            <a href="index.html" class="nav-brand"
+                                ><h2 class="text-white">AnwaltHilfe</h2></a
                             >
 
                             <!-- Navbar Toggler -->
@@ -59,7 +52,7 @@
 
                             <!-- Menu -->
                             <div class="classy-menu">
-                                <!-- close btn -->
+                                <!-- Close Button -->
                                 <div class="classycloseIcon">
                                     <div class="cross-wrap">
                                         <span class="top"></span
@@ -67,18 +60,23 @@
                                     </div>
                                 </div>
 
-                                <!-- Nav Start -->
+                                <!-- Navbar Start -->
                                 <div class="classynav">
                                     <ul>
                                         <li>
                                             <a href="index.html">Startseite</a>
                                         </li>
                                         <li>
-                                            <a href="about-us.html">Über uns</a>
+                                            <a href="about.html">Über uns</a>
                                         </li>
                                         <li>
-                                            <a href="legalization.html"
-                                                >Legalisierung in der Schweiz</a
+                                            <a href="visas.html"
+                                                >Visum für die USA</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="processing-payments.html"
+                                                >Zahlungen für Bürger</a
                                             >
                                         </li>
                                         <li>
@@ -94,19 +92,30 @@
                                                         >Anwälte</a
                                                     >
                                                 </li>
-
-                                                <li>
-                                                    <a href="visas.html"
-                                                        >Visum für die USA</a
-                                                    >
-                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- Nav End -->
+                                <!-- Navbar End -->
                             </div>
                         </nav>
+
+                        <!-- Search Form -->
+                        <div class="search-form">
+                            <form action="#" method="get">
+                                <input
+                                    type="search"
+                                    name="search"
+                                    id="search"
+                                    placeholder="Type keywords &amp; press enter..."
+                                />
+                                <button type="submit" class="d-none"></button>
+                            </form>
+                            <!-- Close Icon -->
+                            <div class="closeIcon">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,7 +124,7 @@
         <main>
             <article
                 class="container additional-wrapper"
-                style="margin-top: 180px"
+                style="margin-top: 100px"
             >
                 <div class="page__content" style="padding: 20px 0px">
                     <h1>Datenschutzrichtlinie</h1>
@@ -251,91 +260,125 @@
                         Datenschutzrichtlinie haben, kontaktieren Sie uns bitte
                         unter den folgenden Kontaktdaten:
                     </p>
-                    <p>Email: rechts_berater24@gmail.com</p>
-                    <p>Telefon: +41315085766</p>
+                    <p>Email: anwalt_hilfe@gmail.com</p>
+                    <p>Telefon: +41442972121</p>
                 </div>
             </article>
         </main>
         <!-- ##### Footer Area Start ##### -->
-        <footer class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-lg-4">
-                        <div class="footer-widget-area mt-50">
-                            <a href="index.html" class="nav-brand text-white"
-                                ><h2 class="text-white">RechtsBerater24</h2></a
-                            >
-                            <p>
-                                Unsere Website bietet Ihnen eine umfassende
-                                Auswahl an juristischen Dienstleistungen für
-                                Privatpersonen und Unternehmen. Von
-                                Rechtsberatung über Vertragsprüfung bis hin zur
-                                Streitbeilegung stehen Ihnen unsere erfahrenen
-                                Anwälte zur Seite. Kontaktieren Sie uns noch
-                                heute, um Ihre rechtlichen Anliegen zu
-                                besprechen und die passende Lösung für Ihre
-                                Bedürfnisse zu finden.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="footer-widget-area mt-50">
-                            <h4 class="text-white mb-3">Kontakt aufnehmen</h4>
-                            <a href="" class="text-white">
+        <footer
+            class="footer-area bg-img"
+            style="background-image: url(img/bg-img/footer-bg.jpg)"
+        >
+            <!-- Main Footer Area -->
+            <div class="main-footer-area">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Footer Widget -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-footer-widget">
+                                <div class="footer-logo mb-30">
+                                    <a href="index.html" class="nav-brand"
+                                        ><h2 class="text-white">
+                                            AnwaltHilfe
+                                        </h2></a
+                                    >
+                                </div>
                                 <p>
-                                    Viktoriastrasse 32, 3013 Bern, Switzerland
+                                    Entdecken Sie die Welt der rechtlichen
+                                    Möglichkeiten mit unserem erfahrenen Team.
+                                    Wir bieten maßgeschneiderte Lösungen für
+                                    Unternehmen und Privatpersonen in
+                                    verschiedenen Rechtsbereichen. Kontaktieren
+                                    Sie uns noch heute, um mehr über unsere
+                                    Dienstleistungen zu erfahren und wie wir
+                                    Ihnen helfen können, Ihre rechtlichen Ziele
+                                    zu erreichen.
                                 </p>
-                            </a>
-                            <br />
-                            <a href="" class="text-white">
-                                <p>rechts_berater24@gmail.com</p>
-                            </a>
-                            <br />
-                            <a href="" class="text-white">
-                                <p>+41315085766</p></a
-                            >
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="footer-widget-area mt-50">
-                            <h4 class="text-white mb-3">Kontakt aufnehmen</h4>
-                            <a href="index.html" class="text-white">
-                                <p>Startseite</p>
-                            </a>
-                            <a href="about-us.html" class="text-white">
-                                <p>Über uns</p>
-                            </a>
-                            <a href="terms-of-use.html" class="text-white">
-                                <p>Nutzungsbedingungen</p></a
-                            >
-                            <a href="bussines-model.html" class="text-white">
-                                <p>Business-Modell</p></a
-                            >
-                        </div>
-                    </div>
 
-                    <!-- Copywrite Text -->
-                    <div class="col-12">
-                        <div class="copywrite-text mt-30">
-                            <p class="text-white">
-                                Haftungsausschluss: Die Informationen auf dieser
-                                Website sind nicht dazu gedacht, Rechtsberatung
-                                zu bieten oder eine Anwalts-Mandanten-Beziehung
-                                zu begründen. Die bereitgestellten
-                                Informationen, Dokumente oder Formulare dienen
-                                nur allgemeinen Informationszwecken und sollten
-                                nicht als Rechtsberatung betrachtet werden.
-                                Gesetze ändern sich regelmäßig; daher können die
-                                Informationen auf dieser Website ungenau sein.
-                                Es ist von entscheidender Bedeutung, dass Sie
-                                rechtlichen Rat einholen, um Ihre Rechte und
-                                Pflichten gemäß dem geltenden Recht und
-                                basierend auf Ihren spezifischen Umständen zu
-                                ermitteln.
-                            </p>
+                        <!-- Single Footer Widget -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>SCHNELLER LINK</h5>
+                                </div>
+                                <nav class="widget-nav">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">Startseite</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">Über uns</a>
+                                        </li>
+                                        <li>
+                                            <a href="terms-of-use.html"
+                                                >Nutzungsbedingungen</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="bussines-model.html"
+                                                >Business-Modell</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <!-- Single Footer Widget -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>CONTACT</h5>
+                                </div>
+
+                                <div class="contact-information">
+                                    <p>
+                                        <span>Address:</span> Hohlstrasse 110,
+                                        8004 Zürich, Switzerland
+                                    </p>
+                                    <p><span>Phone:</span> +41442972121</p>
+                                    <p>
+                                        <span>Email:</span>
+                                        anwalt_hilfe@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Area -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="border-line"></div>
+                        </div>
+                        <!-- Copywrite Text -->
+                        <div class="col-12 col-md-12">
+                            <div class="copywrite-text">
+                                <p>
+                                    Haftungsausschluss: Die Informationen auf
+                                    dieser Website sind nicht dazu gedacht,
+                                    Rechtsberatung zu bieten oder eine
+                                    Anwalts-Mandanten-Beziehung zu begründen.
+                                    Die bereitgestellten Informationen,
+                                    Dokumente oder Formulare dienen nur
+                                    allgemeinen Informationszwecken und sollten
+                                    nicht als Rechtsberatung betrachtet werden.
+                                    Gesetze ändern sich regelmäßig; daher können
+                                    die Informationen auf dieser Website ungenau
+                                    sein. Es ist von entscheidender Bedeutung,
+                                    dass Sie rechtlichen Rat einholen, um Ihre
+                                    Rechte und Pflichten gemäß dem geltenden
+                                    Recht und basierend auf Ihren spezifischen
+                                    Umständen zu ermitteln.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -368,7 +411,7 @@
         </div>
         <!-- End Cookie banner -->
 
-        <!-- ##### All Javascript Script ##### -->
+        <!-- ##### All Javascript Files ##### -->
         <!-- jQuery-2.2.4 js -->
         <script src="js/jquery/jquery-2.2.4.min.js"></script>
         <!-- Popper js -->
@@ -379,8 +422,7 @@
         <script src="js/plugins/plugins.js"></script>
         <!-- Active js -->
         <script src="js/active.js"></script>
-
-        <script src="js/contact-form.js"></script>
         <script src="js/cookiebanner.js"></script>
+        <script src="js/contact-form.js"></script>
     </body>
 </html>
